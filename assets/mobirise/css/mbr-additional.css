@@ -634,6 +634,11 @@ a {
 .cid-rXa2WbyB20 H4 {
   color: #200960;
 }
+@media (max-width: 992px) {
+  .cid-rXa2WbyB20 img {
+    width: 90%;
+  }
+}
 .cid-rXa55jkNgn {
   padding-top: 0px;
   padding-bottom: 15px;
