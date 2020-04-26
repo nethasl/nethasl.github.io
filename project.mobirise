@@ -1,7 +1,7 @@
 {
   "settings": {
-    "name": "nslPsychology",
-    "currentPage": "experience.html",
+    "name": "Nethali Sabbah Lerner - Psychology",
+    "currentPage": "index.html",
     "theme": {
       "name": "therapym4",
       "title": "TherapyM4",
@@ -60,8 +60,8 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
-        "meta_descr": "",
+        "title": "Nethali Sabbah Lerner - clinical & counseling psychologist",
+        "meta_descr": "I am a clinical & counselling psychologist based in south west London and offering face-to-face and online therapy sessions and asessments in english, spanish and french.",
         "header_custom": "",
         "footer_custom": "",
         "html_before": ""
@@ -1216,8 +1216,9 @@
     },
     "experience.html": {
       "settings": {
-        "title": "Traning, qualifications and experience",
-        "order": 1
+        "title": "Nethali Sabbah Lerner - My experience",
+        "order": 1,
+        "meta_descr": "I am a clinical & counselling psychologist based in south west London. Learn more about my qualifications, experience and education."
       },
       "components": [
         {
@@ -2505,8 +2506,9 @@
     },
     "services.html": {
       "settings": {
-        "title": "My Services",
-        "order": 2
+        "title": "Nethali Sabbah Lerner - My services & fees",
+        "order": 2,
+        "meta_descr": "I am a clinical & counselling psychologist based in south west London. I offer therapy for adults, childer and adolescents. EMDR therapy and Psychodiagnostic assesments for children, young people and adults."
       },
       "components": [
         {
@@ -3832,8 +3834,9 @@
     },
     "contact.html": {
       "settings": {
-        "title": "Contact",
-        "order": 3
+        "title": "Nethali Sabbah Lerner - Contact details",
+        "order": 3,
+        "meta_descr": "I am a clinical & counselling psychologist based in south west London. Email nethali@nslpsychology.com or call +44 (0) 7857 143990 "
       },
       "components": [
         {
