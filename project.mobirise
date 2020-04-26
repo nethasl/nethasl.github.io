@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "nslPsychology",
-    "currentPage": "services.html",
+    "currentPage": "experience.html",
     "theme": {
       "name": "therapym4",
       "title": "TherapyM4",
@@ -1349,8 +1349,8 @@
               "&:before": {
                 "position": "absolute",
                 "left": "0px",
-                "top": "55%",
-                "transform": "translateY(-50%)",
+                "top": "10%",
+                "transform": "translateY(0%)",
                 "content": "\"\\e908\"",
                 "font-family": "'Moririse2' !important",
                 "color": "currentColor",
@@ -1439,8 +1439,8 @@
               "&:before": {
                 "position": "absolute",
                 "left": "0px",
-                "top": "55%",
-                "transform": "translateY(-50%)",
+                "top": "10%",
+                "transform": "translateY(0%)",
                 "content": "\"\\e908\"",
                 "font-family": "'Moririse2' !important",
                 "color": "currentColor",
@@ -1524,8 +1524,8 @@
               "&:before": {
                 "position": "absolute",
                 "left": "0px",
-                "top": "55%",
-                "transform": "translateY(-50%)",
+                "top": "10%",
+                "transform": "translateY(0%)",
                 "content": "\"\\e908\"",
                 "font-family": "'Moririse2' !important",
                 "color": "currentColor",
@@ -2664,8 +2664,8 @@
               "&:before": {
                 "position": "absolute",
                 "left": "0px",
-                "top": "55%",
-                "transform": "translateY(-50%)",
+                "top": "10%",
+                "transform": "translateY(0%)",
                 "content": "\"\\e908\"",
                 "font-family": "'Moririse2' !important",
                 "color": "currentColor",
@@ -2782,8 +2782,8 @@
               "&:before": {
                 "position": "absolute",
                 "left": "0px",
-                "top": "55%",
-                "transform": "translateY(-50%)",
+                "top": "10%",
+                "transform": "translateY(0%)",
                 "content": "\"\\e908\"",
                 "font-family": "'Moririse2' !important",
                 "color": "currentColor",
