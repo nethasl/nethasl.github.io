@@ -2665,6 +2665,41 @@ a {
     align-self: center;
   }
 }
+.cid-rXsNcjdRKK {
+  padding-top: 105px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-rXsNcjdRKK img {
+  width: 40%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: auto;
+}
+.cid-rXsNcjdRKK .card-phone {
+  transition: all 0.3s;
+  cursor: pointer;
+  color: #200960;
+}
+.cid-rXsNcjdRKK .card-phone:hover {
+  color: #d58f76;
+}
+.cid-rXsNcjdRKK .mbr-text,
+.cid-rXsNcjdRKK .mbr-section-btn {
+  color: #999999;
+}
+.cid-rXsNcjdRKK .card-title,
+.cid-rXsNcjdRKK .card-box {
+  color: #200960;
+}
+@media (max-width: 992px) {
+  .cid-rXsNcjdRKK .img-col {
+    margin-bottom: 3rem;
+  }
+}
+.cid-rXsNcjdRKK .mbr-section-subtitle {
+  color: #d58f76;
+}
 .cid-rX9YbxXat1 {
   padding-top: 75px;
   padding-bottom: 15px;
