@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Nethali Sabbah Lerner - Psychology",
-    "currentPage": "experience.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "therapym4",
       "title": "TherapyM4",
@@ -2682,7 +2682,7 @@
             },
             "@media (max-width: 1200px)": {
               "img": {
-                "width": "50%"
+                "width": "30%"
               }
             },
             "@media (max-width: 992px)": {
@@ -2800,7 +2800,7 @@
             },
             "@media (max-width: 1200px)": {
               "img": {
-                "width": "50%"
+                "width": "30%"
               }
             },
             "@media (max-width: 992px)": {
@@ -2921,7 +2921,7 @@
             },
             "@media (max-width: 1200px)": {
               "img": {
-                "width": "50%"
+                "width": "30%"
               }
             },
             "@media (max-width: 992px)": {
