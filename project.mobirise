@@ -62,7 +62,7 @@
       "settings": {
         "main": true,
         "title": "Nethali Sabbah Lerner - clinical & counseling psychologist",
-        "meta_descr": "I am a clinical & counselling psychologist based in south west London and offer face-to-face and online sessions in English, French and Spanish. Services: Therapy/EMDR/Assessments",
+        "meta_descr": "I am a clinical & counselling psychologist based in south west London offering Therapy / EMDR / Assessments face-to-face and online in English, French and Spanish",
         "header_custom": "",
         "footer_custom": "",
         "html_before": ""
@@ -1217,9 +1217,9 @@
     },
     "experience.html": {
       "settings": {
-        "title": "Nethali Sabbah Lerner - My experience",
+        "title": "About me",
         "order": 1,
-        "meta_descr": "I am a clinical & counselling psychologist based in south west London and offer face-to-face and online sessions in English, French and Spanish. Services: Therapy/EMDR/Assessments"
+        "meta_descr": "I am a clinical & counselling psychologist based in south west London offering Therapy / EMDR / Assessments face-to-face and online in English, French and Spanish"
       },
       "components": [
         {
@@ -2507,9 +2507,9 @@
     },
     "services.html": {
       "settings": {
-        "title": "Nethali Sabbah Lerner - My services & fees",
+        "title": "Services & fees",
         "order": 2,
-        "meta_descr": "I am a clinical & counselling psychologist based in south west London and offer face-to-face and online sessions in English, French and Spanish. Services: Therapy/EMDR/Assessments"
+        "meta_descr": "I am a clinical & counselling psychologist based in south west London offering Therapy / EMDR / Assessments face-to-face and online in English, French and Spanish"
       },
       "components": [
         {
@@ -3917,7 +3917,7 @@
     },
     "contact.html": {
       "settings": {
-        "title": "Nethali Sabbah Lerner - Contact details",
+        "title": "Contact details",
         "order": 3,
         "meta_descr": "I am a clinical & counselling psychologist based in south west London. Email nethali@nslpsychology.com or call +44 (0) 7857 143990 "
       },
