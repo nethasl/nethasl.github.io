@@ -666,9 +666,9 @@ a {
 .cid-rXa55jkNgn .mbr-section-btn {
   color: #999999;
 }
-@media (max-width: 1200px) {
+@media (max-width: 750px) {
   .cid-rXa55jkNgn img {
-    width: 100%;
+    width: 50%;
   }
 }
 @media (max-width: 992px) {
