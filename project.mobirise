@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Nethali Sabbah Lerner - Psychology",
-    "currentPage": "index.html",
+    "currentPage": "experience.html",
     "theme": {
       "name": "therapym4",
       "title": "TherapyM4",
@@ -1358,9 +1358,6 @@
             },
             "H4": {
               "color": "#d58f76"
-            },
-            ".mbr-text": {
-              "text-align": "justify"
             }
           },
           "_name": "content3",
@@ -1491,9 +1488,6 @@
             },
             "H4": {
               "color": "#d58f76"
-            },
-            "p": {
-              "text-align": "justify"
             }
           },
           "_name": "content3",
@@ -2816,9 +2810,6 @@
             },
             "H4": {
               "color": "#d58f76"
-            },
-            "p": {
-              "text-align": "justify"
             }
           },
           "_name": "content3",
@@ -2937,9 +2928,6 @@
             },
             "H4": {
               "color": "#d58f76"
-            },
-            ".mbr-text": {
-              "text-align": "justify"
             }
           },
           "_name": "content3",
@@ -3001,7 +2989,7 @@
             },
             "H3": {
               "color": "#999999",
-              "text-align": "justify"
+              "text-align": "left"
             },
             "H4": {
               "color": "#200960",
@@ -3012,12 +3000,12 @@
           "_customHTML": "<section group=\"Info\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Sub Title\" name=\"showsubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Signature\" name=\"showSignature\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#333333\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.1\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"mbr-black col-md-12 col-lg-6 align-center\">\n                <h4 class=\"mbr-section-subtitle mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showsubTitle\"><b>Fees</b></h4>\n                <h3 class=\"mbr-section-title mbr-bold mbr-black pb-4 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\"><span style=\"font-weight: normal;\">Each 50-minute therapy session of face-to-face or video-session is £100.</span><div><span style=\"font-weight: normal;\"><br></span></div><div><span style=\"font-weight: normal;\">EMDR sessions are £115, vary between 50-75 minutes and require a minimum commitment of 6 sessions.</span></div><div><span style=\"font-weight: normal;\"><br></span></div><div><span style=\"font-weight: normal;\">Please enquire about Diagnostic Assessments (fees will vary depending of the needs and length of the assessment required).</span></div><div><span style=\"font-weight: normal;\"><br></span></div><div><span style=\"font-weight: normal;\">I am registered and recognised by the following healthcare insurance providers: AXA PPP, AVIVA, ALLIANZ, VITALITY HEALTH, WPA. &nbsp;&nbsp;</span></div><div><span style=\"font-weight: normal;\"><br></span></div><div><span style=\"font-weight: normal;\">International bank transfers are possible (for payments in Euros and Dollars).</span></div><div><span style=\"font-weight: normal;\"><br></span></div><div><span style=\"font-weight: normal;\"><i>If you are on a low income please mention this when getting in touch, as I have a limited number of concession spaces.&nbsp;</i></span></div><div><span style=\"font-weight: normal;\"><br></span></div><div><span style=\"font-weight: normal;\">In case of cancellation, I would ask you to notify me 48 hours in advance, otherwise the session will be due in full.</span></div></h3>\n                <p class=\"mbr-text pb-4 mbr-black mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Lorem ipsum dolor sit amet,\n                    consectetur adipiscing elit. Vestibulum in fermentum tellus. Etiam turpis metus, mattis vel\n                    ullamcorper sed, convallis eget tellus.</p>\n                <img class=\"pb-3\" src=\"../_images/signature.png\" alt=\"Mobirise\" mbr-if=\"showSignature\">\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">READ MORE</a></div>\n\n\n\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "rXafHcA6Pb",
           "_anchor": "info1-1o",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_PHPplaceholders": [],
-          "_JSplaceholders": []
+          "_params": {}
         },
         {
           "alias": false,
@@ -3115,12 +3103,12 @@
           "_isUserblock": true,
           "_sourceTheme": "therapym4",
           "_cid": "rXasZ3J6ml",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_PHPplaceholders": [],
-          "_JSplaceholders": []
+          "_params": {}
         },
         {
           "alias": false,
