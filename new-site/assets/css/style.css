@@ -321,16 +321,13 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 
 .approach { margin-top: clamp(40px, 6vw, 72px); padding-top: clamp(24px, 3vw, 32px); border-top: 1px solid var(--line); display: grid; gap: 12px 48px; grid-template-columns: 1fr; }
 @media (min-width: 900px) { .approach { grid-template-columns: 300px 1fr; } }
-.approach h3 { color: var(--rug); }
 .approach p { max-width: 68ch; }
 .pill-list { list-style: none; padding: 0; margin: 1.2rem 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .pill-list li { padding: 6px 14px; border-radius: 999px; border: 1.5px solid var(--olive); color: var(--olive); font-size: var(--fs-small); font-weight: 500; }
 
 /* ---------- EMDR ---------- */
 .aside-note { margin-top: 1.8rem; padding-top: 18px; border-top: 1px solid var(--walnut); }
-.aside-note h3 { font-style: italic; font-weight: 500; font-size: var(--fs-h3); color: var(--rug); }
 .aside-note p { margin: 0; max-width: 68ch; }
-.list-intro { font-weight: 400; }
 .rule-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--walnut); }
 .rule-list li { position: relative; padding: 13px 0 13px 30px; border-bottom: 1px solid var(--line); line-height: 1.5; }
 .rule-list li::before { content: ""; position: absolute; left: 2px; top: 24px; width: 16px; height: 1.5px; background: var(--mustard); }
@@ -376,7 +373,6 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 .insurance { padding-bottom: clamp(32px, 4vw, 48px); margin-bottom: clamp(32px, 4vw, 48px); border-bottom: 1px solid var(--line); }
 .insurance p, .fee-policies p { font-size: var(--fs-body); max-width: 52ch; }
 .insurance .sub-head, .fee-policies .sub-head { margin-top: 0; }
-.muted { color: var(--warm-grey); }
 .insurer-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 24px; }
 @media (min-width: 600px) { .insurer-grid { grid-template-columns: repeat(4, 1fr); } }
 .insurer-grid li {
