@@ -346,7 +346,9 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 .price span { font-family: var(--font-head); font-size: 3rem; font-weight: 600; color: var(--rug); line-height: 1; margin-right: 4px; }
 .featured .price { color: var(--cream); border-bottom-color: rgba(255, 255, 255, .2); }
 .featured .price span { color: #fff; }
-.price-text { font-family: var(--font-head); font-size: 1.35rem; font-weight: 600; color: var(--oak); }
+.price small { font-size: .85rem; font-weight: 400; margin-right: 2px; }
+.price-extra { padding-top: 12px; border-top: 1px solid rgba(255, 255, 255, .2); }
+.price-extra strong { font-family: var(--font-head); font-size: 1.4rem; }
 .fee-details .sub-head:first-child { margin-top: 0; }
 .insurer-list { list-style: none; padding: 0; margin: 0 0 1.2rem; display: grid; gap: 8px; grid-template-columns: repeat(2, 1fr); }
 .insurer-list li { padding: 10px 14px; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; font-weight: 400; font-size: .92rem; }
@@ -364,6 +366,27 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 .address-note { display: block; margin: 10px 0 16px; font-size: .9rem; color: var(--warm-grey); }
 .map { margin-top: clamp(32px, 5vw, 56px); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); background: var(--linen); }
 .map iframe { display: block; width: 100%; height: clamp(280px, 40vw, 420px); border: 0; filter: sepia(.15) saturate(.9); }
+
+/* ---------- Getting started (3 steps) ---------- */
+.steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 20px; grid-template-columns: 1fr; counter-reset: none; }
+@media (min-width: 800px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+.step { position: relative; background: var(--paper); border-radius: var(--radius); padding: clamp(24px, 3vw, 32px); box-shadow: var(--shadow); }
+.step h3 { color: var(--rug); margin-top: .6em; }
+.step p { font-size: .95rem; margin: 0; }
+.step-num {
+  display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%;
+  background: var(--mustard); color: var(--walnut); font-family: var(--font-head); font-size: 1.5rem; font-weight: 600;
+}
+@media (min-width: 800px) {
+  .step:not(:last-child)::after {
+    content: ""; position: absolute; top: 54px; right: -20px; width: 20px; height: 2px; background: var(--mustard);
+  }
+}
+.steps-cta { margin-top: clamp(28px, 4vw, 40px); justify-content: center; }
+
+/* Small link with an arrow, e.g. to the HCPC register */
+.ext-link { font-weight: 500; }
+.ext-link::after { content: " →"; }
 
 /* ---------- Contact (dark walnut, like the original contact block) ---------- */
 .section-dark { background: var(--walnut); color: var(--linen); }
