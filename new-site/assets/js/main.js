@@ -93,6 +93,18 @@
     fadeClouds();
   }
 
+  /* ---- Expandable lists: opening one item closes the others ----
+     (modern browsers do this via <details name="...">; this covers older ones) */
+  document.querySelectorAll('.expand-list').forEach(function (list) {
+    var items = list.querySelectorAll('details');
+    items.forEach(function (d) {
+      d.addEventListener('toggle', function () {
+        if (!d.open) return;
+        items.forEach(function (other) { if (other !== d && other.open) other.open = false; });
+      });
+    });
+  });
+
   /* ---- Footer year ---- */
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
