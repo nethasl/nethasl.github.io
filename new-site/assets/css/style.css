@@ -308,13 +308,16 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 .map iframe { display: block; width: 100%; height: clamp(280px, 40vw, 420px); border: 0; filter: sepia(.15) saturate(.9); }
 
 /* ---------- Therapy: numbered editorial list ---------- */
-.numbered-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--walnut); }
-.numbered-list li { display: grid; grid-template-columns: 52px 1fr; gap: 4px 18px; padding: 20px 0; border-bottom: 1px solid var(--line); }
-@media (min-width: 820px) { .numbered-list li { grid-template-columns: 76px minmax(220px, 340px) 1fr; align-items: baseline; padding: 24px 0; } }
-.numbered-list .num { font-family: var(--font-head); font-style: italic; font-size: 2.1rem; line-height: 1; color: var(--mustard); }
-.numbered-list h4 { font-size: var(--fs-item); margin: 0; }
-.numbered-list p { margin: 0; color: var(--warm-grey); grid-column: 2; }
-@media (min-width: 820px) { .numbered-list p { grid-column: 3; } }
+.icon-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--walnut); }
+.icon-list li { display: grid; grid-template-columns: 48px 1fr; gap: 6px 18px; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--line); }
+@media (min-width: 820px) { .icon-list li { grid-template-columns: 56px minmax(220px, 340px) 1fr; gap: 4px 24px; padding: 24px 0; } }
+.area-icon { grid-row: span 2; align-self: start; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: var(--linen); color: var(--rug); }
+@media (min-width: 820px) { .area-icon { grid-row: auto; align-self: center; width: 56px; height: 56px; } }
+.area-icon svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+@media (min-width: 820px) { .area-icon svg { width: 26px; height: 26px; } }
+.icon-list h4 { font-size: var(--fs-item); margin: 0; }
+.icon-list p { margin: 0; color: var(--warm-grey); grid-column: 2; }
+@media (min-width: 820px) { .icon-list p { grid-column: 3; } }
 
 .approach { margin-top: clamp(40px, 6vw, 72px); padding-top: clamp(24px, 3vw, 32px); border-top: 1px solid var(--line); display: grid; gap: 12px 48px; grid-template-columns: 1fr; }
 @media (min-width: 900px) { .approach { grid-template-columns: 300px 1fr; } }
