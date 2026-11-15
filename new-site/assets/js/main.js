@@ -23,7 +23,7 @@
   document.addEventListener('click', function (e) {
     if (nav.classList.contains('is-open') && !header.contains(e.target)) setMenu(false);
   });
-  window.matchMedia('(min-width: 1100px)').addEventListener('change', function (mq) { if (mq.matches) setMenu(false); });
+  window.matchMedia('(min-width: 1240px)').addEventListener('change', function (mq) { if (mq.matches) setMenu(false); });
 
   /* ---- Header shadow once the page scrolls ---- */
   function onScroll() { header.classList.toggle('is-scrolled', window.scrollY > 8); }
