@@ -73,6 +73,26 @@
     items.forEach(function (el) { io.observe(el); });
   }
 
+  /* ---- Clouds behind the welcome section fade away on scroll ---- */
+  var hero = document.querySelector('.hero');
+  var heroBg = document.querySelector('.hero-bg');
+  if (hero && heroBg) {
+    var calm = window.matchMedia('(prefers-reduced-motion: reduce)');
+    var fading = false;
+    var fadeClouds = function () {
+      fading = false;
+      var p = Math.min(Math.max(window.scrollY / (hero.offsetHeight * 0.85), 0), 1);
+      heroBg.style.opacity = String(1 - p);
+      // gentle drift upwards unless the visitor prefers less motion
+      heroBg.style.transform = calm.matches ? '' : 'translateY(' + (p * -40) + 'px) scale(' + (1 + p * 0.06) + ')';
+    };
+    window.addEventListener('scroll', function () {
+      if (!fading) { fading = true; requestAnimationFrame(fadeClouds); }
+    }, { passive: true });
+    window.addEventListener('resize', fadeClouds);
+    fadeClouds();
+  }
+
   /* ---- Footer year ---- */
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
