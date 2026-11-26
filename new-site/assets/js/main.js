@@ -23,7 +23,27 @@
   document.addEventListener('click', function (e) {
     if (nav.classList.contains('is-open') && !header.contains(e.target)) setMenu(false);
   });
-  window.matchMedia('(min-width: 1240px)').addEventListener('change', function (mq) { if (mq.matches) setMenu(false); });
+  /* ---- Keep the name and title whole: switch to the menu button when the full menu
+     does not fit beside them (below 1240px the stylesheet always uses the button) ---- */
+  var inner = header.querySelector('.header-inner');
+  var brand = header.querySelector('.brand');
+  var wide = window.matchMedia('(min-width: 1240px)');
+  function fitMenu() {
+    if (!wide.matches) { header.classList.remove('is-compact'); return; }
+    header.classList.remove('is-compact');
+    header.classList.add('is-measuring');
+    var compact = inner.scrollWidth > inner.clientWidth || brand.offsetWidth + nav.offsetWidth + 16 > inner.clientWidth;
+    header.classList.remove('is-measuring');
+    header.classList.toggle('is-compact', compact);
+    if (!compact) setMenu(false);
+  }
+  var fitQueued = false;
+  window.addEventListener('resize', function () {
+    if (!fitQueued) { fitQueued = true; requestAnimationFrame(function () { fitQueued = false; fitMenu(); }); }
+  });
+  wide.addEventListener('change', function () { setMenu(false); fitMenu(); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitMenu);
+  fitMenu();
 
   /* ---- Header shadow once the page scrolls ---- */
   function onScroll() { header.classList.toggle('is-scrolled', window.scrollY > 8); }
