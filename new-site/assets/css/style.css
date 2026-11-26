@@ -346,7 +346,19 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 .expand-list summary::after { content: "+"; flex: none; font-family: var(--font-body); font-weight: 300; font-size: 1.8rem; line-height: 1; color: var(--rug); transition: transform .25s; }
 .expand-list details[open] summary::after { transform: rotate(45deg); }
 .expand-list summary:hover { color: var(--rug); }
-.expand-list details p { margin: -4px 0 22px; color: var(--warm-grey); max-width: 64ch; }
+.expand-list summary small { display: block; margin-top: 4px; font-family: var(--font-body); font-size: var(--fs-small); font-weight: 300; line-height: 1.4; color: var(--warm-grey); }
+.panel-body { padding: 0 0 26px; max-width: 64ch; }
+.panel-body > p { margin: 0 0 14px; }
+.panel-body .list-label { margin: 18px 0 8px; }
+.panel-body .rule-list { border-top-color: var(--line); }
+.panel-body .rule-list li { padding: 9px 0 9px 28px; }
+.panel-body .rule-list li::before { top: 20px; }
+.panel-body .rule-list + p { margin-top: 16px; }
+.assess-note .sub-head { margin-top: clamp(32px, 4vw, 44px); }
+.assess-note .rule-list { margin-bottom: 18px; }
+.assess-note p { max-width: 64ch; }
+.hero-facts a { color: inherit; text-decoration: none; }
+.hero-facts a:hover { color: var(--rug); }
 
 /* ---------- Fees: a simple table ---------- */
 .fee-table { width: 100%; border-collapse: collapse; margin-bottom: clamp(40px, 6vw, 64px); }
