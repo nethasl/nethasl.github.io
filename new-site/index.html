@@ -17,8 +17,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=24">
-  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="assets/css/style.css?v=26">
+  <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.nslReady)document.documentElement.classList.remove('js');},2500);</script>
 </head>
 <body>
 
@@ -27,7 +27,7 @@
 <!-- ============ Sticky menu ============ -->
 <header class="site-header" id="top">
   <div class="container header-inner">
-    <a class="brand" href="#welcome" aria-label="NSL Psychology, back to top">
+    <a class="brand" href="#welcome" aria-label="Nethali Sabbah Lerner, Clinical &amp; Counselling Psychologist, back to top">
       <span class="brand-mark" aria-hidden="true">NSL</span>
       <span class="brand-text">
         <span class="brand-name">Nethali Sabbah Lerner</span>
@@ -71,7 +71,7 @@
         <li><a href="#assessments">Therapy · EMDR · ADHD, autism &amp; cognitive assessments</a></li>
       </ul>
       <div class="btn-row">
-        <a class="btn" href="#contact">Arrange a brief call</a>
+        <a class="btn" href="#contact">Get in touch</a>
         <a class="btn btn-outline" href="#assessments">Assessments</a>
       </div>
     </div>
@@ -231,6 +231,7 @@
           <li>With your consent, liaison with schools or other professionals</li>
         </ul>
         <p class="assess-fee"><strong>Fees:</strong> assessments start from £899. The fee depends on the type and scope of the assessment, and the process, timescale and fee are agreed in writing before the assessment begins.</p>
+        <p class="assess-cta"><a class="btn btn-outline" href="#contact">Get in touch about an assessment</a></p>
       </div>
     </div>
   </div>
@@ -340,34 +341,34 @@
   <div class="container">
     <header class="section-head reveal">
       <p class="eyebrow">Fees &amp; appointments</p>
-      <h2>Session fees</h2>
+      <h2 id="fees-title">Session fees</h2>
       <p class="section-lead">Sessions are available face-to-face in Clapham Junction or online.</p>
     </header>
 
-    <table class="fee-table reveal">
-      <thead>
-        <tr><th scope="col">Service</th><th scope="col">Details</th><th scope="col">Fee</th></tr>
+    <table class="fee-table reveal" role="table" aria-labelledby="fees-title">
+      <thead role="rowgroup">
+        <tr role="row"><th scope="col" role="columnheader">Service</th><th scope="col" role="columnheader">Details</th><th scope="col" role="columnheader">Fee</th></tr>
       </thead>
-      <tbody>
-        <tr>
-          <th scope="row">Individual psychological therapy</th>
-          <td>50-minute session</td>
-          <td class="fee">£130</td>
+      <tbody role="rowgroup">
+        <tr role="row">
+          <th scope="row" role="rowheader">Individual psychological therapy</th>
+          <td role="cell">50-minute session</td>
+          <td role="cell" class="fee">£130</td>
         </tr>
-        <tr>
-          <th scope="row">Saturday sessions</th>
-          <td>50-minute session</td>
-          <td class="fee">£150</td>
+        <tr role="row">
+          <th scope="row" role="rowheader">Saturday sessions</th>
+          <td role="cell">50-minute session</td>
+          <td role="cell" class="fee">£150</td>
         </tr>
-        <tr>
-          <th scope="row">EMDR therapy</th>
-          <td>Session length may vary depending on the stage of treatment. Arrangements will be agreed before therapy begins.</td>
-          <td class="fee"><small>from</small> £140</td>
+        <tr role="row">
+          <th scope="row" role="rowheader">EMDR therapy</th>
+          <td role="cell">Session length may vary depending on the stage of treatment. Arrangements will be agreed before therapy begins.</td>
+          <td role="cell" class="fee"><small>from</small> £140</td>
         </tr>
-        <tr>
-          <th scope="row">Psychological &amp; neurodevelopmental assessments</th>
-          <td>Fees depend on the type of assessment (for example ADHD, autism or cognitive). Each assessment involves several stages, which may include interviews, testing, a written report and a feedback session. The process and fee will be confirmed before the assessment begins.</td>
-          <td class="fee"><small>from</small> £899</td>
+        <tr role="row">
+          <th scope="row" role="rowheader">Psychological &amp; neurodevelopmental assessments</th>
+          <td role="cell">Fees depend on the type of assessment (for example ADHD, autism or cognitive). Each assessment involves several stages, which may include interviews, testing, a written report and a feedback session. The process and fee will be confirmed before the assessment begins.</td>
+          <td role="cell" class="fee"><small>from</small> £899</td>
         </tr>
       </tbody>
     </table>
@@ -399,6 +400,37 @@
         <h3 class="sub-head">Cancellation policy</h3>
         <p>I kindly ask for at least 24 hours' notice to cancel or rearrange an appointment. Appointments cancelled with less notice will normally be charged at the full fee.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Getting started ============ -->
+<section class="section section-band" id="getting-started">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Getting started</p>
+      <h2>How to arrange an appointment</h2>
+      <p class="section-lead">Taking the first step can feel difficult, so the process is kept straightforward.</p>
+    </header>
+    <ol class="steps reveal-group">
+      <li class="step reveal">
+        <span class="step-num" aria-hidden="true">1</span>
+        <h3>Get in touch</h3>
+        <p>Please contact me by email or telephone with a brief outline of the support or assessment you are looking for. If you wish to use private health insurance, please mention this at this stage. If you would prefer, I am happy to correspond by email in the first instance.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num" aria-hidden="true">2</span>
+        <h3>A brief telephone discussion</h3>
+        <p>We will arrange a short telephone conversation, or continue by email if you prefer, to discuss your needs, answer any questions you may have and consider whether working together would be appropriate.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num" aria-hidden="true">3</span>
+        <h3>First appointment</h3>
+        <p>If you decide to proceed, we will arrange your first appointment, either in Clapham Junction or online, and the work will continue at a pace that feels right for you.</p>
+      </li>
+    </ol>
+    <div class="btn-row steps-cta reveal">
+      <a class="btn btn-light" href="#contact">Get in touch</a>
     </div>
   </div>
 </section>
@@ -453,37 +485,6 @@
   </div>
 </section>
 
-<!-- ============ Getting started ============ -->
-<section class="section section-band" id="getting-started">
-  <div class="container">
-    <header class="section-head reveal">
-      <p class="eyebrow">Getting started</p>
-      <h2>How to arrange an appointment</h2>
-      <p class="section-lead">Taking the first step can feel difficult, so the process is kept straightforward.</p>
-    </header>
-    <ol class="steps reveal-group">
-      <li class="step reveal">
-        <span class="step-num" aria-hidden="true">1</span>
-        <h3>Get in touch</h3>
-        <p>Please contact me by email or telephone with a brief outline of the support or assessment you are looking for. If you wish to use private health insurance, please mention this at this stage.</p>
-      </li>
-      <li class="step reveal">
-        <span class="step-num" aria-hidden="true">2</span>
-        <h3>A brief telephone discussion</h3>
-        <p>We will arrange a short telephone conversation to discuss your needs, answer any questions you may have and consider whether working together would be appropriate.</p>
-      </li>
-      <li class="step reveal">
-        <span class="step-num" aria-hidden="true">3</span>
-        <h3>First appointment</h3>
-        <p>If you decide to proceed, we will arrange your first appointment, either in Clapham Junction or online, and the work will continue at a pace that feels right for you.</p>
-      </li>
-    </ol>
-    <div class="btn-row steps-cta reveal">
-      <a class="btn btn-light" href="#contact">Arrange a brief call</a>
-    </div>
-  </div>
-</section>
-
 <!-- ============ Contact ============ -->
 <section class="section section-dark" id="contact">
   <div class="container contact-grid">
@@ -491,7 +492,8 @@
       <p class="eyebrow">Enquiries &amp; appointments</p>
       <h2>Get in touch</h2>
       <p class="section-lead">If you would like to discuss therapy or arrange a psychological assessment, please get in touch. I would be happy to answer any questions and to discuss the most appropriate next steps.</p>
-      <p class="section-lead">If you wish to use private health insurance, please mention this in your enquiry.</p>
+      <p class="section-lead">If you wish to use private health insurance, please mention this in your enquiry. If you would prefer not to telephone, you are welcome to email me, and we can continue by email.</p>
+      <p class="contact-note">Information you send me is treated as confidential and handled in line with my <a href="privacy.html">privacy notice</a>. In your first message, please give only a brief outline; we can discuss the details later. I am not able to respond to urgent messages. If you need urgent help, please see the crisis information below.</p>
     </div>
     <ul class="contact-list reveal-group">
       <li class="reveal">
@@ -528,15 +530,15 @@
       <p>Nethali Sabbah Lerner · Clinical &amp; Counselling Psychologist<br>HCPC registration no. PYL36914 · Member of the British Psychological Society</p>
     </div>
     <div class="crisis">
-      <p><strong>In a crisis:</strong> please note that I am not an emergency service. If you or someone else is at immediate risk, call <a href="tel:999">999</a>, go to A&amp;E, call <a href="tel:111">NHS 111</a> (option 2 for mental health) or contact Samaritans on <a href="tel:116123">116 123</a>.</p>
+      <p><strong>In a crisis:</strong> I do not provide an emergency service, and I am not able to respond to messages outside working hours. If you or someone else is in immediate danger, please call <a href="tel:999">999</a> or go to your nearest A&amp;E. For urgent mental health support in England, call <a href="tel:111">NHS 111</a> and select option 2, available 24 hours a day. You can also call Samaritans free of charge on <a href="tel:116123">116 123</a> or text SHOUT to <a href="sms:85258">85258</a>. Young people under 19 can call Childline on <a href="tel:08001111">0800 1111</a>.</p>
     </div>
   </div>
   <div class="container footer-bottom">
-    <p>© <span id="year">2026</span> NSL Psychology. All rights reserved.</p>
+    <p>© <span id="year">2026</span> NSL Psychology. All rights reserved. · <a href="privacy.html">Privacy notice</a></p>
     <a href="#welcome" class="back-to-top">Back to top ↑</a>
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=9" defer></script>
+<script src="assets/js/main.js?v=10" defer></script>
 </body>
 </html>

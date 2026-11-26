@@ -1,6 +1,8 @@
 /* NSL Psychology — menu, active section highlighting and scroll reveal */
 (function () {
   'use strict';
+  // Tells the fallback in the page head that the script loaded, so content stays animated
+  window.nslReady = true;
 
   var header = document.querySelector('.site-header');
   var nav = document.getElementById('site-nav');
@@ -23,6 +25,10 @@
   document.addEventListener('click', function (e) {
     if (nav.classList.contains('is-open') && !header.contains(e.target)) setMenu(false);
   });
+  // Close the open menu when keyboard focus moves out of the header, so it never hides the focused item
+  header.addEventListener('focusout', function (e) {
+    if (nav.classList.contains('is-open') && e.relatedTarget && !header.contains(e.relatedTarget)) setMenu(false);
+  });
   /* ---- Keep the name and title whole: switch to the menu button when the full menu
      does not fit beside them (below 1240px the stylesheet always uses the button) ---- */
   var inner = header.querySelector('.header-inner');
@@ -43,6 +49,8 @@
   });
   wide.addEventListener('change', function () { setMenu(false); fitMenu(); });
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitMenu);
+  // Re-check when the name block changes size (e.g. larger text or text spacing settings)
+  if ('ResizeObserver' in window) new ResizeObserver(function () { requestAnimationFrame(fitMenu); }).observe(brand);
   fitMenu();
 
   /* ---- Header shadow once the page scrolls ---- */

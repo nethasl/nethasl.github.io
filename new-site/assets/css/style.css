@@ -15,6 +15,7 @@
   --mustard: #c8961e;
   --mustard-soft: #e9cf8f;
   --oak: #9a5a24;
+  --oak-text: #86501e; /* slightly deeper oak for small labels, for legibility */
   --olive: #5e6b3a;
   --line: #e4d8c6;
 
@@ -71,7 +72,9 @@ h3 { font-size: var(--fs-h3); }
 h4 { font-size: var(--fs-item); }
 p { margin: 0 0 1em; }
 
-:focus-visible { outline: 3px solid var(--mustard); outline-offset: 3px; border-radius: 4px; }
+/* Focus ring: dark orange on light backgrounds, soft mustard on dark and orange ones */
+:focus-visible { outline: 3px solid var(--rug-dark); outline-offset: 3px; border-radius: 4px; }
+.section-band :focus-visible, .section-dark :focus-visible, .site-footer :focus-visible { outline-color: var(--mustard-soft); }
 
 .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 var(--gutter); }
 
@@ -227,7 +230,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 .eyebrow {
   display: inline-flex; align-items: center; gap: 10px;
   margin: 0 0 .9rem;
-  font-size: var(--fs-label); font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--oak);
+  font-size: var(--fs-label); font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--oak-text);
 }
 .eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--mustard); }
 
@@ -418,7 +421,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 @media (min-width: 900px) { .roles { grid-template-columns: 1fr 1fr; } }
 .role { padding-top: 18px; border-top: 1px solid var(--walnut); }
 .role h4 { font-size: var(--fs-item); margin-bottom: .2em; }
-.role-meta { font-size: var(--fs-label); letter-spacing: .1em; text-transform: uppercase; color: var(--oak); font-weight: 500; margin-bottom: .6em; }
+.role-meta { font-size: var(--fs-label); letter-spacing: .1em; text-transform: uppercase; color: var(--oak-text); font-weight: 500; margin-bottom: .6em; }
 .role-org { font-weight: 500; color: var(--rug); }
 .role p:last-child { margin-bottom: 0; }
 
@@ -435,7 +438,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 .section-band { background: var(--rug); color: var(--cream); }
 .section-band h2 { color: #fff; }
 .section-band .section-lead { color: var(--cream); }
-.section-band .eyebrow { color: var(--mustard-soft); }
+.section-band .eyebrow { color: var(--cream); }
 .section-band .eyebrow::before { background: var(--mustard-soft); }
 .steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 28px; grid-template-columns: 1fr; }
 @media (min-width: 800px) { .steps { grid-template-columns: repeat(3, 1fr); gap: 0; } .step { padding: 0 32px; } .step:first-child { padding-left: 0; } .step + .step { border-left: 1px solid rgba(255, 255, 255, .28); } }
@@ -484,3 +487,24 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
   .btn, .contact-list a, .expand-list summary::after { transition: none; }
   .scroll-cue span { animation: none; }
 }
+
+/* ---------- Review fixes ---------- */
+/* Enquiry link at the end of the assessments section */
+.assess-cta { margin: 22px 0 0; }
+/* Privacy and urgent-help note beside the contact details (dark section) */
+.contact-note { font-size: var(--fs-small); color: var(--linen); max-width: 60ch; margin-top: 1.2em; }
+.contact-note a, .site-footer .footer-bottom a { color: var(--mustard-soft); }
+/* Printing shows every section, even ones not yet scrolled into view */
+@media print { .js .reveal { opacity: 1; transform: none; } }
+
+/* ---------- Privacy notice page ---------- */
+.legal { padding: clamp(40px, 7vw, 88px) 0; }
+.legal .container { max-width: 760px; }
+.legal h1 { font-size: clamp(2rem, 3.6vw, 3rem); color: var(--rug); }
+.legal h2 { font-size: var(--fs-h3); color: var(--walnut); margin-top: 2.2rem; }
+.legal ul { padding-left: 1.2em; }
+.legal li { margin-bottom: .4em; }
+.legal .updated { color: var(--warm-grey); font-size: var(--fs-small); }
+.tbc { background: #fff1c9; padding: 0 .25em; border-radius: 3px; }
+/* On phones the name links back, and there is a button at the end of the page */
+@media (max-width: 640px) { .legal-back { display: none; } }
