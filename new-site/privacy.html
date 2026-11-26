@@ -9,7 +9,7 @@
   <!-- Preview version: keep out of Google until it replaces the live site -->
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/style.css?v=28">
+  <link rel="stylesheet" href="assets/css/style.css?v=29">
 </head>
 <body>
 
@@ -79,8 +79,9 @@
     <h2>Your rights</h2>
     <p>You have the right to ask for a copy of the information I hold about you, to ask me to correct it, and in some circumstances to ask me to delete it, restrict its use or object to its use. Parents and carers may make requests on behalf of a child, taking into account the young person's age and understanding. To make a request, please contact me using the details above. I will respond within one month.</p>
 
-    <h2>This website</h2>
-    <p>This website does not use analytics, advertising or tracking cookies, and it does not set any cookies of its own. The map on the main page is provided by Google Maps, so your browser connects to Google's servers when the page loads, which shares your IP address with Google, and Google may set its own cookies. Google's use of this information is covered by <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>. The website is hosted by GitHub Pages, which may keep server logs for security purposes.</p>
+    <h2 id="website">This website and cookies</h2>
+    <p>This website does not use advertising cookies. With your agreement, it uses Google Analytics to understand how visitors use the site, for example which pages are viewed and how people arrive at the site. Google Analytics sets cookies on your device and shares information about your visit, including your IP address, with Google. It is only switched on if you choose "Accept analytics", and you can change your choice at any time using "Cookie settings" at the bottom of each page. If you reject analytics, no analytics cookies are set. Your choice is remembered in your browser's storage so that you are not asked again on each visit.</p>
+    <p>The map on the main page is provided by Google Maps, so your browser connects to Google's servers when the page loads, which shares your IP address with Google, and Google may set its own cookies. Google's use of this information is covered by <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>. The website is hosted by GitHub Pages, which may keep server logs for security purposes.</p>
 
     <h2>Complaints</h2>
     <p>If you have any concerns about how I handle your information, please contact me first and I will do my best to resolve them. You also have the right to complain to the Information Commissioner's Office: <a href="https://ico.org.uk/make-a-complaint/" rel="noopener">ico.org.uk/make-a-complaint</a>, telephone 0303 123 1113.</p>
@@ -103,10 +104,21 @@
     </div>
   </div>
   <div class="container footer-bottom">
-    <p>© 2026 NSL Psychology. All rights reserved.</p>
+    <p>© 2026 NSL Psychology. All rights reserved.<span data-cookie-settings hidden> · <a href="#cookie-banner">Cookie settings</a></span></p>
     <a href="index.html" class="back-to-top">Back to the main page</a>
   </div>
 </footer>
+
+<!-- ============ Cookie choice (shown only when analytics is set up) ============ -->
+<div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookie choice" hidden>
+  <p>I would like to use Google Analytics to understand how visitors use this website. It sets cookies and is only switched on if you agree. You can change your choice at any time using "Cookie settings" at the bottom of the page. <a href="privacy.html#website">Privacy notice</a></p>
+  <div class="cookie-actions">
+    <button type="button" class="btn btn-sm" data-consent="accept">Accept analytics</button>
+    <button type="button" class="btn btn-sm" data-consent="reject">Reject analytics</button>
+  </div>
+</div>
+<!-- Google Analytics: add the GA4 measurement ID (G-...) to data-ga-id on every page to switch it on -->
+<script src="assets/js/consent.js?v=1" data-ga-id="G-DRV8Y8C4NE"></script>
 
 </body>
 </html>
