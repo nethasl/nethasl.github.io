@@ -653,3 +653,6 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 .cookie-actions { display: flex; flex-wrap: wrap; gap: 10px; }
 .cookie-actions .btn { flex: 1 1 160px; justify-content: center; }
 [data-cookie-settings][hidden] { display: none; }
+
+/* "Get in touch" button at the end of the Therapy and EMDR sections */
+.section-cta { margin: clamp(28px, 4vw, 44px) 0 0; }
