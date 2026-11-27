@@ -656,3 +656,36 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 
 /* "Get in touch" button at the end of the Therapy and EMDR sections */
 .section-cta { margin: clamp(28px, 4vw, 44px) 0 0; }
+
+/* ---------- Phones: floating round menu button, bottom right ---------- */
+@media (max-width: 767px) {
+  /* The header blur would trap fixed-position children, so use a plain background on phones */
+  .site-header { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(250, 246, 239, .97); }
+
+  .menu-toggle {
+    position: fixed; right: 20px; bottom: 20px; z-index: 70;
+    width: 60px; height: 60px; padding: 0; justify-content: center;
+    border: 0; border-radius: 50%;
+    background: var(--rug); color: #fff;
+    box-shadow: 0 8px 22px rgba(58, 42, 34, .28), 0 0 0 3px rgba(250, 246, 239, .9);
+    transition: background-color .2s, transform .2s;
+  }
+  .menu-toggle:hover { background: var(--rug-dark); transform: translateY(-2px); }
+  .menu-toggle .menu-toggle-bars { width: 22px; }
+  .menu-toggle .menu-toggle-bars span { background: #fff; }
+  /* keep the word "Menu" for screen readers only */
+  .menu-toggle-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* The menu opens as a card just above the button */
+  .site-nav {
+    position: fixed; top: auto; left: auto; right: 20px; bottom: 92px; z-index: 69;
+    width: min(320px, calc(100vw - 40px));
+    border: 1px solid var(--line); border-bottom: 3px solid var(--mustard); border-radius: var(--radius);
+    box-shadow: 0 16px 40px rgba(58, 42, 34, .22);
+  }
+  .site-nav.is-open { max-height: calc(100vh - 140px); }
+  .site-nav ul { padding: 8px 20px 18px; }
+
+  /* Keep the cookie card clear of the floating button */
+  .cookie-banner { bottom: 92px; }
+}
